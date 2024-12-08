@@ -32,12 +32,20 @@ function App() {
     <>
       <NavbarContainer className={isScrolled ? "scrolled" : ""}>
         <SubContainer>
-          <NavItem onClick={() => handleScrollToSection("features")}>Features</NavItem>
-          <NavItem onClick={() => handleScrollToSection("process")}>Diet Plan</NavItem>
-          <NavItem onClick={() => handleScrollToSection("workout")}>Workout Plans</NavItem>
+          <NavItem onClick={() => handleScrollToSection("features")}>
+            Features
+          </NavItem>
+          <NavItem onClick={() => handleScrollToSection("process")}>
+            Diet Plan
+          </NavItem>
+          <NavItem onClick={() => handleScrollToSection("workout")}>
+            Workout Plans
+          </NavItem>
           <NavItem>Blog</NavItem>
           <NavItem onClick={() => handleScrollToSection("faqs")}>FAQs</NavItem>
-          <NavItem onClick={() => handleScrollToSection("contact")}>Contact Us</NavItem>
+          <NavItem onClick={() => handleScrollToSection("contact")}>
+            Contact Us
+          </NavItem>
         </SubContainer>
         <SubContainer>
           <LogoName>GymFluencer</LogoName>
@@ -46,7 +54,9 @@ function App() {
       <MainContainer>
         <Content>
           <h1>TRACK YOUR FITNESS JOURNEY</h1>
-          <button>Get Started</button>
+          <button onClick={() => handleScrollToSection("features")}>
+            Get Started
+          </button>
         </Content>
       </MainContainer>
       <Section id="features">
