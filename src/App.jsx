@@ -105,6 +105,7 @@ const NavItem = styled.div`
   position: relative;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: grey;
   &:hover {
     color: var(--color-primary, #ff443a);
   }
